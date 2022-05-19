@@ -1,11 +1,13 @@
 package com.sofkau.ddd.order;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.ddd.drink_detail.values.Drink_Detail_Id;
 import com.sofkau.ddd.food_detail.values.Food_Detail_Id;
 import com.sofkau.ddd.order.events.*;
 import com.sofkau.ddd.order.values.*;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
@@ -26,6 +28,12 @@ public class Order extends AggregateEvent<Order_Id> {
     private Order(Order_Id entityId){
         super(entityId);
         subscribe(new OrderChange(this));
+    }
+
+    public static Order from(Order_Id orderId, List<DomainEvent> events){
+        var order = new Order(orderId);
+        events.forEach(order::applyEvent);
+        return order;
     }
 
     public void addEmployee(Employee_Id entityId, Employee_Type employee_type, Name name){
