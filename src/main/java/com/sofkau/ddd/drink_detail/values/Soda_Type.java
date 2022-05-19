@@ -1,4 +1,10 @@
 package com.sofkau.ddd.drink_detail.values;
 
-public class Soda_Type {
+import co.com.sofka.domain.generic.ValueObject;
+
+public class Soda_Type implements ValueObject<String> {
+    @Override
+    public String value() {
+        return null;
+    }
 }

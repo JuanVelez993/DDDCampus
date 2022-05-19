@@ -1,4 +1,10 @@
 package com.sofkau.ddd.food_detail.values;
 
-public class Food_Value {
+import co.com.sofka.domain.generic.ValueObject;
+
+public class Food_Value implements ValueObject<Double> {
+    @Override
+    public Double value() {
+        return null;
+    }
 }
