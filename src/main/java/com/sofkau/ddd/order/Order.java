@@ -13,14 +13,19 @@ import java.util.Set;
 public class Order extends AggregateEvent<Order_Id> {
 
     protected Set<Employee> employees;
-    protected Client client;
+    protected Set<Client> clients;
     protected Order_Date order_date;
-    protected Food_Detail_Id food_detail_id;
-    protected Drink_Detail_Id drink_detail_id;
+    protected Set<Food_Detail_Id> food_detail_id;
+    protected Set<Drink_Detail_Id> drink_detail_id;
 
     public Order(Order_Id entityId,Order_Date order_date) {
         super(entityId);
         appendChange(new OrderCreated(order_date)).apply();
+    }
+
+    private Order(Order_Id entityId){
+        super(entityId);
+        subscribe(new OrderChange(this));
     }
 
     public void addEmployee(Employee_Id entityId, Employee_Type employee_type, Name name){
@@ -73,23 +78,27 @@ public class Order extends AggregateEvent<Order_Id> {
         return employees.stream().filter(employee -> employee.identity().equals(employee_id)).findFirst();
     }
 
+    public Optional<Client> getClientById(Client_Id client_id){
+        return clients.stream().filter(client -> client.identity().equals(client_id)).findFirst();
+    }
+
     public Set<Employee> Employees() {
         return employees;
     }
 
-    public Client Client() {
-        return client;
+    public Set<Client> Client() {
+        return clients;
     }
 
     public Order_Date Order_date() {
         return order_date;
     }
 
-    public Food_Detail_Id Food_detail_id() {
+    public Set<Food_Detail_Id> Food_detail_id() {
         return food_detail_id;
     }
 
-    public Drink_Detail_Id Drink_detail_id() {
+    public Set<Drink_Detail_Id> Drink_detail_id() {
         return drink_detail_id;
     }
 }
