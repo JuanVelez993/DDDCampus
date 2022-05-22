@@ -13,4 +13,12 @@ public class Popcorn_typeChanged extends DomainEvent {
         this.entityId=entityId;
         this.popcorn_type=popcorn_type;
     }
+
+    public Popcorn_Id getEntityId() {
+        return entityId;
+    }
+
+    public Popcorn_Type getPopcorn_type() {
+        return popcorn_type;
+    }
 }

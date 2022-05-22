@@ -95,7 +95,7 @@ public class Food_Detail extends AggregateEvent<Food_Detail_Id> {
         return fast_foods.stream().filter(fast_food -> fast_food.identity().equals(fast_food_id)).findFirst();
     }
 
-    public Optional<Snack> getESnackById(Snack_Id snack_id){
+    public Optional<Snack> getSnackById(Snack_Id snack_id){
         return snacks.stream().filter(snack -> snack.identity().equals(snack_id)).findFirst();
     }
 
