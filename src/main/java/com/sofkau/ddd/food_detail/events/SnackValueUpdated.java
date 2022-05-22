@@ -2,7 +2,7 @@ package com.sofkau.ddd.food_detail.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.ddd.food_detail.values.Snack_Id;
-import com.sofkau.ddd.food_detail.values.Value;
+import com.sofkau.ddd.generic.Value;
 
 public class SnackValueUpdated extends DomainEvent {
     private final Snack_Id snack_id;

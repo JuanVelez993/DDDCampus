@@ -3,8 +3,7 @@ package com.sofkau.ddd.drink_detail;
 import co.com.sofka.domain.generic.Entity;
 import com.sofkau.ddd.drink_detail.values.Slushy_Flavor;
 import com.sofkau.ddd.drink_detail.values.Slushy_Id;
-import com.sofkau.ddd.drink_detail.values.Soda_Type;
-import com.sofkau.ddd.drink_detail.values.Value;
+import com.sofkau.ddd.generic.Value;
 
 import java.util.Objects;
 

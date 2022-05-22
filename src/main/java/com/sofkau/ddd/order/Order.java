@@ -4,6 +4,7 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.ddd.drink_detail.values.Drink_Detail_Id;
 import com.sofkau.ddd.food_detail.values.Food_Detail_Id;
+import com.sofkau.ddd.generic.Name;
 import com.sofkau.ddd.order.events.*;
 import com.sofkau.ddd.order.values.*;
 

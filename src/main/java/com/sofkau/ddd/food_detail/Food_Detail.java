@@ -4,6 +4,7 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.ddd.food_detail.events.*;
 import com.sofkau.ddd.food_detail.values.*;
+import com.sofkau.ddd.generic.Value;
 
 
 import java.util.List;
@@ -38,7 +39,7 @@ public class Food_Detail extends AggregateEvent<Food_Detail_Id> {
         appendChange(new Food_ValueUpdated(foodDetailId,food_value)).apply();
     }
 
-    public void addFast_Food(Fast_Food_Id entityId,Fast_Food_Type fast_food_type,Value value) {
+    public void addFast_Food(Fast_Food_Id entityId, Fast_Food_Type fast_food_type, Value value) {
         Objects.requireNonNull(entityId);
         Objects.requireNonNull(fast_food_type);
         Objects.requireNonNull(value);

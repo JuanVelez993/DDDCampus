@@ -3,7 +3,7 @@ package com.sofkau.ddd.food_detail;
 import co.com.sofka.domain.generic.Entity;
 import com.sofkau.ddd.food_detail.values.Fast_Food_Id;
 import com.sofkau.ddd.food_detail.values.Fast_Food_Type;
-import com.sofkau.ddd.food_detail.values.Value;
+import com.sofkau.ddd.generic.Value;
 
 import java.util.Objects;
 

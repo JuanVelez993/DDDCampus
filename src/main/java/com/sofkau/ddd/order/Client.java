@@ -2,7 +2,7 @@ package com.sofkau.ddd.order;
 
 import co.com.sofka.domain.generic.Entity;
 import com.sofkau.ddd.order.values.Client_Id;
-import com.sofkau.ddd.order.values.Name;
+import com.sofkau.ddd.generic.Name;
 import com.sofkau.ddd.order.values.Payment;
 
 import java.util.Objects;

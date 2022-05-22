@@ -3,7 +3,7 @@ package com.sofkau.ddd.food_detail.commands;
 import co.com.sofka.domain.generic.Command;
 import com.sofkau.ddd.food_detail.values.Fast_Food_Id;
 import com.sofkau.ddd.food_detail.values.Food_Detail_Id;
-import com.sofkau.ddd.food_detail.values.Value;
+import com.sofkau.ddd.generic.Value;
 
 public class UpdateFast_FoodValue extends Command {
     private final Food_Detail_Id entityId;

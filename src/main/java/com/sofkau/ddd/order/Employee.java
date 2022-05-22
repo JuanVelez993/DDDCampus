@@ -3,7 +3,7 @@ package com.sofkau.ddd.order;
 import co.com.sofka.domain.generic.Entity;
 import com.sofkau.ddd.order.values.Employee_Id;
 import com.sofkau.ddd.order.values.Employee_Type;
-import com.sofkau.ddd.order.values.Name;
+import com.sofkau.ddd.generic.Name;
 
 import java.util.Objects;
 

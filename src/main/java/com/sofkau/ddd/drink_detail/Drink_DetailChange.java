@@ -5,9 +5,6 @@ import com.sofkau.ddd.drink_detail.events.*;
 import com.sofkau.ddd.drink_detail.events.SodaAdded;
 import com.sofkau.ddd.drink_detail.events.Soda_typeChanged;
 import com.sofkau.ddd.drink_detail.events.SlushyAdded;
-
-
-
 import java.util.HashSet;
 
 public class Drink_DetailChange extends EventChange {

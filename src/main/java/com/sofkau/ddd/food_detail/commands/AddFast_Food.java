@@ -4,7 +4,7 @@ import co.com.sofka.domain.generic.Command;
 import com.sofkau.ddd.food_detail.values.Fast_Food_Id;
 import com.sofkau.ddd.food_detail.values.Fast_Food_Type;
 import com.sofkau.ddd.food_detail.values.Food_Detail_Id;
-import com.sofkau.ddd.food_detail.values.Value;
+import com.sofkau.ddd.generic.Value;
 
 public class AddFast_Food extends Command {
     private final Food_Detail_Id food_detail_id;

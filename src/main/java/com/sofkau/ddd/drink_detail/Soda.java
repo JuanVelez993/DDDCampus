@@ -3,8 +3,6 @@ package com.sofkau.ddd.drink_detail;
 import co.com.sofka.domain.generic.Entity;
 import com.sofkau.ddd.drink_detail.values.Soda_Id;
 import com.sofkau.ddd.drink_detail.values.Soda_Type;
-import com.sofkau.ddd.drink_detail.values.Value;
-import com.sofkau.ddd.food_detail.values.Snack_Name;
 
 import java.util.Objects;
 

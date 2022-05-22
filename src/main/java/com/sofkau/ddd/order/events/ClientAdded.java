@@ -2,7 +2,7 @@ package com.sofkau.ddd.order.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.ddd.order.values.Client_Id;
-import com.sofkau.ddd.order.values.Name;
+import com.sofkau.ddd.generic.Name;
 import com.sofkau.ddd.order.values.Payment;
 
 public class ClientAdded extends DomainEvent {

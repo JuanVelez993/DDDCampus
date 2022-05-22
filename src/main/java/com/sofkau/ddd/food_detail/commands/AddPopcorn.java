@@ -4,7 +4,7 @@ import co.com.sofka.domain.generic.Command;
 import com.sofkau.ddd.food_detail.values.Food_Detail_Id;
 import com.sofkau.ddd.food_detail.values.Popcorn_Id;
 import com.sofkau.ddd.food_detail.values.Popcorn_Type;
-import com.sofkau.ddd.food_detail.values.Value;
+import com.sofkau.ddd.generic.Value;
 
 public class AddPopcorn extends Command {
     private final Food_Detail_Id entityId;

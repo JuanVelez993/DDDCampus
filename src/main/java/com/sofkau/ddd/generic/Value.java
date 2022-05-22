@@ -1,13 +1,14 @@
-package com.sofkau.ddd.order.values;
+package com.sofkau.ddd.generic;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+
 import java.util.Objects;
 
-public class Payment implements ValueObject<Double> {
+public class Value implements ValueObject<Double> {
     private final Double value;
 
-    public Payment(Double value) {
+    public Value(Double value) {
         this.value = Objects.requireNonNull(value);
 
 
@@ -21,9 +22,9 @@ public class Payment implements ValueObject<Double> {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Payment)) return false;
-        Payment payment = (Payment) o;
-        return Objects.equals(value, payment.value);
+        if (!(o instanceof Value)) return false;
+        Value valuef = (Value) o;
+        return Objects.equals(value, valuef.value);
     }
 
     @Override

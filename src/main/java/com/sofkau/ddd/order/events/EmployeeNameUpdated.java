@@ -2,7 +2,7 @@ package com.sofkau.ddd.order.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.ddd.order.values.Employee_Id;
-import com.sofkau.ddd.order.values.Name;
+import com.sofkau.ddd.generic.Name;
 
 public class EmployeeNameUpdated extends DomainEvent {
     private Employee_Id employee_id;

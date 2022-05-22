@@ -3,7 +3,7 @@ package com.sofkau.ddd.drink_detail.events;
 import co.com.sofka.domain.generic.DomainEvent;
 import com.sofkau.ddd.drink_detail.values.Soda_Id;
 import com.sofkau.ddd.drink_detail.values.Soda_Type;
-import com.sofkau.ddd.drink_detail.values.Value;
+import com.sofkau.ddd.generic.Value;
 
 public class SodaAdded extends DomainEvent {
     private final Soda_Id entityId;

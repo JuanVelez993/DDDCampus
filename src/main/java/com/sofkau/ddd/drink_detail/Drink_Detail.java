@@ -10,6 +10,7 @@ import com.sofkau.ddd.food_detail.events.Fast_Food_ValueUpdated;
 import com.sofkau.ddd.food_detail.events.Fast_Food_typeChanged;
 import com.sofkau.ddd.food_detail.values.Fast_Food_Id;
 import com.sofkau.ddd.food_detail.values.Fast_Food_Type;
+import com.sofkau.ddd.generic.Value;
 
 
 import java.util.List;
@@ -54,7 +55,7 @@ public class Drink_Detail extends AggregateEvent<Drink_Detail_Id> {
         appendChange(new Soda_typeChanged(entityId,soda_type)).apply();
     }
 
-    public void updateSoda_Value(Soda_Id entityId,Value value){
+    public void updateSoda_Value(Soda_Id entityId, Value value){
         appendChange(new SodaValueUpdated(entityId,value)).apply();
     }
 
